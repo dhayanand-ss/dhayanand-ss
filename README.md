@@ -31,7 +31,7 @@ roles:
   - AI / ML Engineer
   - Backend Developer (Go, TypeScript)
   - Mobile Developer (Flutter)
-clubs_at_nitt: [Spider, Delta]
+clubs_at_nitt: [Spider]
 competitions: [eYRC (IIT Bombay), Codeathon]
 fun_fact: I build systems that think, reply, and learn -- but always with a human in the loop.
 ```
