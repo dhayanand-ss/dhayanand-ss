@@ -78,6 +78,40 @@ fun_fact: I build systems that think, reply, and learn -- but always with a huma
 
 <table>
   <tr>
+    <td colspan="2" valign="top">
+      <h3 align="center">Malicious Email Detection — Multi-Agent DLP</h3>
+      <p align="center">
+        <a href="https://github.com/dhayanand-ss/Data-Loss-Prevention">
+          <img src="https://img.shields.io/badge/VIEW_REPO-181717?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
+        <img src="https://img.shields.io/badge/A2A_Protocol-A177FE?style=for-the-badge"/>
+        <img src="https://img.shields.io/badge/RAG-FF6F00?style=for-the-badge"/>
+        <img src="https://img.shields.io/badge/Defensive_Security-D14836?style=for-the-badge"/>
+      </p>
+      <p align="center"><i>Three agents, one mission — keep the secrets inside.</i></p>
+      <pre align="center">
+Gmail Pub/Sub → Orchestrator → Parser → Classifier → Notifier → Manager Review → Employee
+      </pre>
+      <p>A defensive DLP system where three autonomous agents communicate over the official <b>Agent2Agent (A2A) protocol</b> to flag policy-violating outgoing email <i>before</i> it lands in the wrong inbox.</p>
+      <ul>
+        <li><b>Parser</b> — turns raw Gmail messages into structured envelopes.</li>
+        <li><b>Classifier</b> — RAG over a Markdown policy corpus (LlamaIndex + Gemini + Pinecone), with a SQLite + regex fallback that catches what semantic search misses: buried AWS keys, Luhn-valid card numbers, RSA private blocks.</li>
+        <li><b>Notifier</b> — drafts a violation notice, persists it as <code>pending_review</code>, and never sends until a manager clicks approve.</li>
+      </ul>
+      <p>Live Gmail integration via Pub/Sub push with a Postgres-backed history cursor and atomic dedup table for at-least-once delivery. FastAPI + Flask + Docker Compose, fully offline tests against eight labeled fixtures.</p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Python-FFD43B?style=flat-square&logo=python&logoColor=306998"/>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=google&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Pinecone-000000?style=flat-square&logo=pinecone&logoColor=white"/>
+        <img src="https://img.shields.io/badge/LlamaIndex-4B32C3?style=flat-square"/>
+        <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+      </p>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3 align="center">AI Email Reply Agent</h3>
       <p align="center">
