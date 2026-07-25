@@ -25,7 +25,7 @@
 ```yaml
 name: Dhayanand S S
 location: India
-education: NIT Trichy (Computer Science)
+education: NIT Trichy
 current_focus: AI Agents, LLMs, RAG Systems
 roles:
   - AI / ML Engineer
